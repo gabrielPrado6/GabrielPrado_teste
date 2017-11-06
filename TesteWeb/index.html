@@ -1,0 +1,41 @@
+<!doctype html>
+<html ng-app="taxiApp">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="content-language" content="pt-br" />
+        <title>Taxi</title>
+
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+        <link ink rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+
+        <script src="app/taxiApp.js"></script>
+
+    </head>
+
+    <body>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Tax App</a>
+                </div>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="#!/driver"><i class="fa fa-automobile"></i> Motorista</a></li>
+                    <li><a href="#!/client"><i class="fa fa-user"></i> Cliente</a></li>
+                    <li><a href="#!/login"><i class="fa fa-key"></i> Log-In</a></li>
+                    <li><a href="#!/singin"><i class="fa fa-user-plus"></i> Sing-In</a></li>
+
+                </ul>
+            </div>
+        </nav>
+
+        <div ng-id="main">
+            <div ng-view></div>
+        </div>
+
+    </body>
+</html>

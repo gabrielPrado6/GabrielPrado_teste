@@ -1,0 +1,14 @@
+<div class="text-center" xmlns:br="http://www.w3.org/1999/html">
+    <h1>Log-In</h1>
+
+    <form name="login" ng-submit="submit()">
+        <label for="email"><b class="fa fa fa-at"></b> </label><input type="email" id="email" name="email" placeholder="EXAMPLE@EMAIL.COM" ng-model="logEmail" required/>
+        <br/>
+        <label for="senha"><b class="fa fa-lock"></b> </label><input type="password" id="senha" name="senha" placeholder="******" ng-model="logPassword" required/>
+        <br/>
+        <span id="erro" name="erro">{{logMessage}}</span>
+        <br/>
+        <button type="reset" id="reset">LIMPAR</button>
+        <button type="submit" id="submit">ENTRAR</button>
+    </form>
+</div>
